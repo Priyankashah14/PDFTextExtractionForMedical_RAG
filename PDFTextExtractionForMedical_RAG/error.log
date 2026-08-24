@@ -1,0 +1,19 @@
+C:\Users\priya\OneDrive\Documents\AI Projects\PDFTextExtractionForMedical_RAG\PDFTextExtractionRag\PDF_Text_Extraction.py:4: DeprecationWarning: `langchain-community` is being sunset and is no longer actively maintained. See https://github.com/langchain-ai/langchain-community/issues/674 for details and migration guidance toward standalone integration packages.
+  from langchain_community.document_loaders import PyPDFLoader
+Traceback (most recent call last):
+PDF Load time: in 1.90 seconds.
+Chunks creation time: in 0.01 seconds.
+  File "C:\Users\priya\OneDrive\Documents\AI Projects\PDFTextExtractionForMedical_RAG\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 68, in __init__
+    import sentence_transformers  # type: ignore[import]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sentence_transformers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\priya\OneDrive\Documents\AI Projects\PDFTextExtractionForMedical_RAG\PDFTextExtractionRag\PDF_Text_Extraction.py", line 54, in <module>
+    embedding_model = HuggingFaceEmbeddings(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priya\OneDrive\Documents\AI Projects\PDFTextExtractionForMedical_RAG\.venv\Lib\site-packages\langchain_huggingface\embeddings\huggingface.py", line 74, in __init__
+    raise ImportError(msg) from exc
+ImportError: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
